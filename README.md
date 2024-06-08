@@ -24,6 +24,6 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
 
 Re-watch [Todo]()
 
-## Credits Todo for
+## Credits
 
-This workshop was set up by Ana Chaloska ([git](https://github.com/anachaloska), [LinkedIn](https://www.linkedin.com/in/ana-chaloska-809486149/)) and Maria Bader, PhD ([git](https://github.com/mkmbader), [LinkedIn](https://www.linkedin.com/in/mkmbader/) and it was powered by @pyladiesams.
+This workshop was set up by Ana Chaloska ([Git](https://github.com/anachaloska), [LinkedIn](https://www.linkedin.com/in/ana-chaloska-809486149/)) and Maria Bader, PhD ([Git](https://github.com/mkmbader), [LinkedIn](https://www.linkedin.com/in/mkmbader/)) and it was powered by [pyladiesams](https://github.com/pyladiesams).
