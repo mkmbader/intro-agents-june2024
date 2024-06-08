@@ -8,8 +8,6 @@
 
 Welcome to the workshop on building LLM agents with LangChain!
 
-**The goal** 
-
 With this notebook you will familiarize yourself with the key concepts of an LLM agent using LangChain. At the end, you will have all the code you need for your very own agent and you will be able to build custom tools for your own use-case. 
 
 ## Requirements TODO
@@ -26,7 +24,6 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
 
 Re-watch [Todo]()
 
-## Credits
+## Credits Todo for
 
-This workshop was set up by Ana Chaloska and Maria Bader, powered by 
-@pyladiesams.
+This workshop was set up by Ana Chaloska ([git](https://github.com/anachaloska), [LinkedIn](https://www.linkedin.com/in/ana-chaloska-809486149/)) and Maria Bader, PhD ([git](https://github.com/mkmbader), [LinkedIn](https://www.linkedin.com/in/mkmbader/) and it was powered by @pyladiesams.
