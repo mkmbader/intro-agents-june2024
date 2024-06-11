@@ -15,7 +15,7 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
 - Python 3.8 or higher
 - Jupyter notebook or jupyter-lab
 
-## Usage
+## Setting up your environment
 
 - Clone the repository
 - Set up a virtual environment, 
@@ -23,8 +23,19 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
         - `pip install ipykernel`
         - `python3 -m ipykernel install --user --name=pyladies-agent`
         - You can select then the kernel `pyladies-agent` after a few minutes in your notebook
+        - Run `!pip3 install -r helper_functions/requirements.txt` in your first python cell
     - using `virtualenv`:
-        - todo
+        - `pip install virtualenv`
+        - Install environment: `!python3 -m venv venv`
+        - Activate enviroment: `!source venv/bin/activate`   
+        - Install dependencies in environment: `!pip3 install -r helper_functions/requirements.txt`
+        - Select `venv` kernel in your notebook
+
+## API keys
+
+API keys can abe accessed via this [privatebin](https://privatebin.molops.io/?a6459e88fa282c28#DsFZvkZSiuPcNQzNXvmtvmTozihhaf1hQdqBCd7r3q5s). The password will be shared during the workshop. 
+
+Make sure to paste the API keys into the file `helper_functions/keys.py` before running the notebook. You are ready to go now!
 
 ## Video record
 
