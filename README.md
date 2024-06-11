@@ -23,7 +23,7 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
         - `pip install ipykernel`
         - `python3 -m ipykernel install --user --name=pyladies-agent`
         - You can select then the kernel `pyladies-agent` after a few minutes in your notebook
-    -using `virtualenv`:
+    - using `virtualenv`:
         - todo
 
 ## Video record
