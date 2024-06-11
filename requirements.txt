@@ -3,3 +3,4 @@ langchain_openai
 langchain_community
 wikipedia
 langchainhub
+pillow
