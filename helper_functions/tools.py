@@ -4,7 +4,7 @@ from langchain_community.utilities import WikipediaAPIWrapper
 import io
 from PIL import Image
 import requests
-from helper_functions.keys import WEATHER_KEY, OPENAI_KEY
+from helper_functions.keys import WEATHER_KEY
 
 WIKI_API_WRAPPER = WikipediaAPIWrapper(top_k_results=1)
 
@@ -37,7 +37,7 @@ my_own_wiki_tool = StructuredTool.from_function(
 
 ##### Weather tool #####
 def extract_city_weather(city:str)->str:
-    api_key = 'ZHK4HRAZ3MTNV5FDNQKFYUGL7'
+    api_key = WEATHER_KEY
 
     # Build the API URL
     url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{city}?key={api_key}&unitGroup=metric"
