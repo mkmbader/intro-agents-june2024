@@ -18,7 +18,13 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
 ## Usage
 
 - Clone the repository
-- Install the required dependencies with `pip3 install -r requirements.txt`
+- Set up a virtual environment, 
+    - using `ipykernel`:
+        - `pip install ipykernel`
+        - `python3 -m ipykernel install --user --name=pyladies-agent`
+        - You can select then the kernel `pyladies-agent` after a few minutes in your notebook
+    -using `virtualenv`:
+        - todo
 
 ## Video record
 
