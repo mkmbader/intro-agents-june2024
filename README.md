@@ -18,18 +18,12 @@ With this repository you will familiarize yourself with the key concepts of an L
 ## Setting up your environment
 
 - Clone the repository
-- Set up a virtual environment, 
-    - using `ipykernel`:
-        - `pip install ipykernel`
-        - `python3 -m ipykernel install --user --name=pyladies-agent`
-        - You can select then the kernel `pyladies-agent` after a few minutes in your notebook
-        - Run `!pip3 install -r requirements.txt` in your first python cell
-    - using `virtualenv`:
-        - `pip install virtualenv`
-        - Install environment: `!python3 -m venv venv`
-        - Activate enviroment: `!source venv/bin/activate`   
-        - Install dependencies in environment: `!pip3 install -r requirements.txt`
-        - Select `venv` kernel in your notebook
+- Set up a virtual environment using `virtualenv`:
+    - `pip install virtualenv`
+    - Install environment: `!python3 -m venv venv`
+    - Activate enviroment: `!source venv/bin/activate`   
+    - Install dependencies in environment: `!pip3 install -r requirements.txt`
+    - Select `venv` kernel in your notebook
 
 ## API keys
 
