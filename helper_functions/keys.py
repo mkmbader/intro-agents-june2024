@@ -6,3 +6,5 @@ WEATHER_KEY = ''
 
 OPENAI_KEY = ''
 client = OpenAI(api_key = OPENAI_KEY)
+
+HUGGING_FACE_KEY = ''
