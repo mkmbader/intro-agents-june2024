@@ -10,7 +10,7 @@ Welcome to the workshop on building LLM agents with LangChain!
 
 With this notebook you will familiarize yourself with the key concepts of an LLM agent using LangChain. At the end, you will have all the code you need for your very own agent and you will be able to build custom tools for your own use-case. 
 
-## Requirements TODO
+## Requirements
 
 - Python 3.8 or higher
 - Jupyter notebook or jupyter-lab
@@ -18,18 +18,12 @@ With this notebook you will familiarize yourself with the key concepts of an LLM
 ## Setting up your environment
 
 - Clone the repository
-- Set up a virtual environment, 
-    - using `ipykernel`:
-        - `pip install ipykernel`
-        - `python3 -m ipykernel install --user --name=pyladies-agent`
-        - You can select then the kernel `pyladies-agent` after a few minutes in your notebook
-        - Run `!pip3 install -r helper_functions/requirements.txt` in your first python cell
-    - using `virtualenv`:
-        - `pip install virtualenv`
-        - Install environment: `!python3 -m venv venv`
-        - Activate enviroment: `!source venv/bin/activate`   
-        - Install dependencies in environment: `!pip3 install -r helper_functions/requirements.txt`
-        - Select `venv` kernel in your notebook
+- Set up a virtual environment using `virtualenv`:
+    - `pip install virtualenv`
+    - Install environment: `!python3 -m venv venv`
+    - Activate enviroment: `!source venv/bin/activate`   
+    - Install dependencies in environment: `!pip3 install -r requirements.txt`
+    - Select `venv` kernel in your notebook
 
 ## API keys
 
@@ -39,7 +33,7 @@ Make sure to paste the API keys into the file `helper_functions/keys.py` before 
 
 ## Video record
 
-Re-watch [Todo]()
+Re-watch [Link](https://www.youtube.com/watch?v=MjeRY7zNb44&list=PLTdYvc4hjao-4OPJ-thNEYfIcnW6tbPSv)
 
 ## Credits
 

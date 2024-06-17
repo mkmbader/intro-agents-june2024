@@ -4,10 +4,11 @@ from langchain_community.utilities import WikipediaAPIWrapper
 import io
 from PIL import Image
 import requests
-from helper_functions.keys import WEATHER_KEY
+from helper_functions.keys import WEATHER_KEY, HUGGING_FACE_KEY
 
 WIKI_API_WRAPPER = WikipediaAPIWrapper(top_k_results=1)
 
+# ------------------------------------------------------------------------------------
 ##### Wikipedia tool #####
 def wikipedia_caller(query:str) ->str:
     """This function queries wikipedia through a search query."""
@@ -18,7 +19,7 @@ class QueryInput(BaseModel):
     query: str = Field(description="Input search query")
 
 # the tool description
-wiki_description: str = (
+wiki_tool_description: str = (
         "A wrapper around Wikipedia. "
         "Useful for when you need to answer general questions about "
         "people, places, companies, facts, historical events, or other subjects. "
@@ -29,12 +30,12 @@ wiki_description: str = (
 my_own_wiki_tool = StructuredTool.from_function(
     func=wikipedia_caller,
     name="wikipedia",
-    description=wiki_description,
+    description=wiki_tool_description,
     args_schema=QueryInput,
     return_direct=False,
 )
 
-
+# ------------------------------------------------------------------------------------
 ##### Weather tool #####
 def extract_city_weather(city:str)->str:
     api_key = WEATHER_KEY
@@ -59,7 +60,7 @@ class WeatherInput(BaseModel):
 
 
 # the tool description
-weather_description: str = (
+weather_tool_description: str = (
         """
         Allows to extract the current temperature in a specific city. 
         """
@@ -69,15 +70,15 @@ weather_description: str = (
 weather_tool = StructuredTool.from_function(
     func=extract_city_weather,
     name="weather",
-    description=weather_description,
+    description=weather_tool_description,
     args_schema=WeatherInput,
     return_direct=False,
 )
-
-##### Images tool #####
+# ------------------------------------------------------------------------------------
+##### Image tool #####
 def text_to_image(payload:str):
     API_URL = "https://api-inference.huggingface.co/models/Corcelio/mobius"
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": f"Bearer {HUGGING_FACE_KEY}"}
 
     def query(payload):
         response = requests.post(API_URL, headers=headers, json=payload)
@@ -109,7 +110,7 @@ class ImageInput(BaseModel):
 
 
 # the tool description
-images_description: str = (
+images_tool_description: str = (
        "Genrate an image based on the input text and return its path"
     )
 
@@ -117,7 +118,10 @@ images_description: str = (
 image_tool = StructuredTool.from_function(
     func=text_to_image,
     name="create_image",
-    description=images_description,
+    description=images_tool_description,
     args_schema=ImageInput,
     return_direct=False,
 )
+
+# ------------------------------------------------------------------------------------
+##### TODO: ADD YOUR OWN TOOLS HERE #####
